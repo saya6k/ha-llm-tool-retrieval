@@ -32,7 +32,7 @@ The tools sent per request went from about 167,000 characters to about 17,000.
 ## Installation (HACS)
 
 1. HACS → ⋮ → **Custom repositories** → add
-   `https://github.com/saya6k/hacs-llm-tool-retrieval` as an **Integration**.
+   `https://github.com/saya6k/ha-llm-tool-retrieval` as an **Integration**.
 2. Install **LLM Tool Retrieval** and restart Home Assistant.
 3. Settings → Devices & Services → **Add integration** → "LLM Tool Retrieval".
 

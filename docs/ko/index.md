@@ -29,7 +29,7 @@ OpenAI 호환 임베딩 API를 씁니다. 도구는 원본 그대로 전달되�
 ## 설치 (HACS)
 
 1. HACS → ⋮ → **Custom repositories** →
-   `https://github.com/saya6k/hacs-llm-tool-retrieval`을 **Integration**으로 추가
+   `https://github.com/saya6k/ha-llm-tool-retrieval`을 **Integration**으로 추가
 2. **LLM Tool Retrieval**을 설치하고 Home Assistant 재시작
 3. 설정 → 기기 및 서비스 → **통합 추가** → "LLM Tool Retrieval"
 
