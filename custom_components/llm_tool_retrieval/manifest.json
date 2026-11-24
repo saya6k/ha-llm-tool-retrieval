@@ -5,6 +5,9 @@
     "ai_task",
     "conversation"
   ],
+  "categories": [
+    "ai_voice"
+  ],
   "codeowners": [
     "@saya6k"
   ],

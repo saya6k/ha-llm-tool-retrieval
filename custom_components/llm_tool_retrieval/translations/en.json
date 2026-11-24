@@ -19,7 +19,7 @@
         "data_description": {
           "name": "Shown in the agent's list of LLM APIs.",
           "source_apis": "The APIs whose tools this one chooses from. In the agent, select this API instead of them, or their tools are offered twice. Leave out APIs whose tools must never run on a request's say-so, such as a browser or a code interpreter.",
-          "embedding_url": "An OpenAI-compatible embeddings API, including /v1 — for example the Embedding app at http://<hostname>:8080/v1.",
+          "embedding_url": "An OpenAI-compatible embeddings API, including /v1 — for example http://HOSTNAME:8080/v1 for the Embedding app, with the hostname shown on its Info tab.",
           "api_key": "Sent as a Bearer token, if the service needs one.",
           "top_k": "How many tools are picked by meaning, on top of the ones always included.",
           "pin_device_control": "Turning devices on and off, timers, media and the like. Its scripts are picked by meaning like any other tool.",
@@ -53,7 +53,7 @@
         },
         "data_description": {
           "source_apis": "The APIs whose tools this one chooses from. In the agent, select this API instead of them, or their tools are offered twice. Leave out APIs whose tools must never run on a request's say-so, such as a browser or a code interpreter.",
-          "embedding_url": "An OpenAI-compatible embeddings API, including /v1 — for example the Embedding app at http://<hostname>:8080/v1.",
+          "embedding_url": "An OpenAI-compatible embeddings API, including /v1 — for example http://HOSTNAME:8080/v1 for the Embedding app, with the hostname shown on its Info tab.",
           "api_key": "Sent as a Bearer token, if the service needs one.",
           "top_k": "How many tools are picked by meaning, on top of the ones always included.",
           "pin_device_control": "Turning devices on and off, timers, media and the like. Its scripts are picked by meaning like any other tool.",
