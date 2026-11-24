@@ -1,0 +1,95 @@
+{
+  "title": "LLM Tool Retrieval",
+  "config": {
+    "step": {
+      "user": {
+        "description": "Creates an LLM API that a conversation agent selects instead of the APIs below. For each request it offers only the tools the request needs: Device control's built-in tools, the ones you always include, and the closest matches by meaning.",
+        "data": {
+          "name": "Name",
+          "source_apis": "Source APIs",
+          "embedding_url": "Embedding service URL",
+          "api_key": "API key",
+          "top_k": "Tools picked per request",
+          "pin_device_control": "Always include Device control's built-in tools",
+          "always_include": "Always include these tools",
+          "ai_task_entity": "AI Task for summaries in your language",
+          "query_prefix": "Query prefix",
+          "document_template": "Tool text template"
+        },
+        "data_description": {
+          "name": "Shown in the agent's list of LLM APIs.",
+          "source_apis": "The APIs whose tools this one chooses from. In the agent, select this API instead of them, or their tools are offered twice. Leave out APIs whose tools must never run on a request's say-so, such as a browser or a code interpreter.",
+          "embedding_url": "An OpenAI-compatible embeddings API, including /v1 — for example the Embedding app at http://<hostname>:8080/v1.",
+          "api_key": "Sent as a Bearer token, if the service needs one.",
+          "top_k": "How many tools are picked by meaning, on top of the ones always included.",
+          "pin_device_control": "Turning devices on and off, timers, media and the like. Its scripts are picked by meaning like any other tool.",
+          "always_include": "Tool names, as the agent sees them, such as search or save for a memory server.",
+          "ai_task_entity": "Optional. Writes a one-line summary of each tool in your language, used only for matching, which helps when requests and tool descriptions are in different languages. Runs once per tool.",
+          "query_prefix": "Put in front of every request before it is embedded. The default is EmbeddingGemma's; clear it for a model without task prefixes.",
+          "document_template": "How a tool is embedded: {title_field} is its name, {text_field} its description. The default is EmbeddingGemma's; use {text_field} alone for a model without task prefixes."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not get an embedding from this URL. Check that it is reachable and ends in /v1.",
+      "invalid_auth": "The embedding service rejected the API key.",
+      "no_sources": "Select at least one source API.",
+      "invalid_template": "The template must contain {text_field}, and no other placeholders than {title_field} and {text_field}."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "source_apis": "Source APIs",
+          "embedding_url": "Embedding service URL",
+          "api_key": "API key",
+          "top_k": "Tools picked per request",
+          "pin_device_control": "Always include Device control's built-in tools",
+          "always_include": "Always include these tools",
+          "ai_task_entity": "AI Task for summaries in your language",
+          "query_prefix": "Query prefix",
+          "document_template": "Tool text template"
+        },
+        "data_description": {
+          "source_apis": "The APIs whose tools this one chooses from. In the agent, select this API instead of them, or their tools are offered twice. Leave out APIs whose tools must never run on a request's say-so, such as a browser or a code interpreter.",
+          "embedding_url": "An OpenAI-compatible embeddings API, including /v1 — for example the Embedding app at http://<hostname>:8080/v1.",
+          "api_key": "Sent as a Bearer token, if the service needs one.",
+          "top_k": "How many tools are picked by meaning, on top of the ones always included.",
+          "pin_device_control": "Turning devices on and off, timers, media and the like. Its scripts are picked by meaning like any other tool.",
+          "always_include": "Tool names, as the agent sees them, such as search or save for a memory server.",
+          "ai_task_entity": "Optional. Writes a one-line summary of each tool in your language, used only for matching, which helps when requests and tool descriptions are in different languages. Runs once per tool.",
+          "query_prefix": "Put in front of every request before it is embedded. The default is EmbeddingGemma's; clear it for a model without task prefixes.",
+          "document_template": "How a tool is embedded: {title_field} is its name, {text_field} its description. The default is EmbeddingGemma's; use {text_field} alone for a model without task prefixes."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not get an embedding from this URL. Check that it is reachable and ends in /v1.",
+      "invalid_auth": "The embedding service rejected the API key.",
+      "no_sources": "Select at least one source API.",
+      "invalid_template": "The template must contain {text_field}, and no other placeholders than {title_field} and {text_field}."
+    }
+  },
+  "exceptions": {
+    "entry_not_loaded": {
+      "message": "That LLM Tool Retrieval entry is not loaded."
+    }
+  },
+  "services": {
+    "preview": {
+      "name": "Preview",
+      "description": "Shows which tools a request would be offered, with the similarity score of every ranked tool. Embeds any tool not embedded yet first, so the first call can take a while.",
+      "fields": {
+        "config_entry_id": {
+          "name": "Entry",
+          "description": "The LLM Tool Retrieval entry to ask."
+        },
+        "text": {
+          "name": "Request",
+          "description": "What a user would say."
+        }
+      }
+    }
+  }
+}

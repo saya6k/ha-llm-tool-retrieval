@@ -1,0 +1,12 @@
+preview:
+  fields:
+    config_entry_id:
+      required: true
+      selector:
+        config_entry:
+          integration: llm_tool_retrieval
+    text:
+      required: true
+      example: 거실 불 꺼줘
+      selector:
+        text:

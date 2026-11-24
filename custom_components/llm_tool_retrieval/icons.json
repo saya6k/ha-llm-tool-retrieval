@@ -1,0 +1,7 @@
+{
+  "services": {
+    "preview": {
+      "service": "mdi:magnify-scan"
+    }
+  }
+}

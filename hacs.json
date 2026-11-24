@@ -1,0 +1,7 @@
+{
+  "name": "LLM Tool Retrieval",
+  "render_readme": true,
+  "homeassistant": "2026.12.0.dev202611220217",
+  "zip_release": true,
+  "filename": "llm_tool_retrieval.zip"
+}

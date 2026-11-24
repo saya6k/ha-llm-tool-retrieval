@@ -1,0 +1,21 @@
+{
+  "domain": "llm_tool_retrieval",
+  "name": "LLM Tool Retrieval",
+  "after_dependencies": [
+    "ai_task",
+    "conversation"
+  ],
+  "codeowners": [
+    "@saya6k"
+  ],
+  "config_flow": true,
+  "documentation": "https://saya6k.github.io/hacs-llm-tool-retrieval/",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/saya6k/hacs-llm-tool-retrieval/issues",
+  "loggers": [
+    "custom_components.llm_tool_retrieval"
+  ],
+  "requirements": [],
+  "version": "0.0.0"
+}
