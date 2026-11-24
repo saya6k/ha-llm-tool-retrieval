@@ -19,7 +19,7 @@
         "data_description": {
           "name": "에이전트의 LLM API 목록에 표시되는 이름입니다.",
           "source_apis": "이 API가 도구를 골라 올 API들입니다. 에이전트에서는 이 API들 대신 이 API만 선택하세요. 같이 선택하면 도구가 두 번 들어갑니다. 브라우저나 코드 실행처럼 요청 한마디로 실행되면 안 되는 도구가 있는 API는 넣지 마세요.",
-          "embedding_url": "OpenAI 호환 임베딩 API 주소로, /v1까지 포함합니다. 예: Embedding 앱이면 http://<hostname>:8080/v1",
+          "embedding_url": "OpenAI 호환 임베딩 API 주소로, /v1까지 포함합니다. 예: Embedding 앱이면 http://HOSTNAME:8080/v1 (HOSTNAME은 앱 정보 탭에 표시됨)",
           "api_key": "서비스에 필요하면 Bearer 토큰으로 보냅니다.",
           "top_k": "항상 포함하는 도구 외에, 의미로 골라 넣을 도구 수입니다.",
           "pin_device_control": "기기 켜고 끄기, 타이머, 미디어 같은 도구입니다. 기기 제어에 노출된 스크립트는 다른 도구처럼 의미로 고릅니다.",
@@ -53,7 +53,7 @@
         },
         "data_description": {
           "source_apis": "이 API가 도구를 골라 올 API들입니다. 에이전트에서는 이 API들 대신 이 API만 선택하세요. 같이 선택하면 도구가 두 번 들어갑니다. 브라우저나 코드 실행처럼 요청 한마디로 실행되면 안 되는 도구가 있는 API는 넣지 마세요.",
-          "embedding_url": "OpenAI 호환 임베딩 API 주소로, /v1까지 포함합니다. 예: Embedding 앱이면 http://<hostname>:8080/v1",
+          "embedding_url": "OpenAI 호환 임베딩 API 주소로, /v1까지 포함합니다. 예: Embedding 앱이면 http://HOSTNAME:8080/v1 (HOSTNAME은 앱 정보 탭에 표시됨)",
           "api_key": "서비스에 필요하면 Bearer 토큰으로 보냅니다.",
           "top_k": "항상 포함하는 도구 외에, 의미로 골라 넣을 도구 수입니다.",
           "pin_device_control": "기기 켜고 끄기, 타이머, 미디어 같은 도구입니다. 기기 제어에 노출된 스크립트는 다른 도구처럼 의미로 고릅니다.",

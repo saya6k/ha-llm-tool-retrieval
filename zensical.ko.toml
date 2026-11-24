@@ -1,10 +1,10 @@
 [project]
 site_name = "LLM Tool Retrieval"
-site_url = "https://saya6k.github.io/hacs-llm-tool-retrieval/ko/"
+site_url = "https://saya6k.github.io/ha-llm-tool-retrieval/ko/"
 site_description = "Home Assistant용 LLM 도구 선별 — 임베딩 모델로 요청마다 필요한 LLM 도구만 골라 대화 에이전트에 넘깁니다."
 docs_dir = "docs/ko"
 site_dir = "site/ko"
-repo_url = "https://github.com/saya6k/hacs-llm-tool-retrieval"
+repo_url = "https://github.com/saya6k/ha-llm-tool-retrieval"
 edit_uri = "edit/main/docs/ko/"
 
 [project.theme]
@@ -12,10 +12,10 @@ language = "ko"
 
 [[project.extra.alternate]]
 name = "English"
-link = "https://saya6k.github.io/hacs-llm-tool-retrieval/en/"
+link = "https://saya6k.github.io/ha-llm-tool-retrieval/en/"
 lang = "en"
 
 [[project.extra.alternate]]
 name = "한국어"
-link = "https://saya6k.github.io/hacs-llm-tool-retrieval/ko/"
+link = "https://saya6k.github.io/ha-llm-tool-retrieval/ko/"
 lang = "ko"
