@@ -2,7 +2,7 @@
 # Wire this checkout into the devcontainer's baked-in Home Assistant install.
 #
 # Use the official HA image from .devcontainer/devcontainer.json. Its
-# 2026.12.0.dev202611220217 minimum matches hacs.json.
+# 2026.12.0b0 minimum matches hacs.json.
 # HA and runtime dependencies are already installed; only dev tools are added.
 set -euo pipefail
 
