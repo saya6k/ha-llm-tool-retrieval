@@ -1,6 +1,6 @@
 # LLM 도구 선별 — Home Assistant 통합
 
-> Home Assistant **2026.12.0.dev202611220217** 이상이 필요합니다.
+> Home Assistant **2026.12.0b0** 이상이 필요합니다.
 
 > 기준 문서는 [English](../en/index.md)이며, 이 번역은 늦을 수 있습니다.
 

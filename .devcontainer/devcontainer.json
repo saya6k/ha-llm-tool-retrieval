@@ -1,6 +1,6 @@
 {
   "name": "ha-llm-tool-retrieval-dev",
-  "image": "ghcr.io/home-assistant/home-assistant:2026.12.0.dev202611220217",
+  "image": "ghcr.io/home-assistant/home-assistant:2026.12.0b0",
   "runArgs": ["--hostname=ha-llm-tool-retrieval-dev", "--entrypoint", "/bin/bash", "-p", "8123:8123"],
   "overrideCommand": true,
   "postCreateCommand": "scripts/setup",

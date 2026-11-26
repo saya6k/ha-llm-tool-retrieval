@@ -1,6 +1,6 @@
 # LLM Tool Retrieval — Home Assistant Integration
 
-> Requires Home Assistant **2026.12.0.dev202611220217** or later.
+> Requires Home Assistant **2026.12.0b0** or later.
 
 > Source of truth — see [한국어](../ko/index.md) for the Korean translation (may lag).
 
