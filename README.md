@@ -32,14 +32,17 @@ ones offered for 93% of them with English descriptions alone, and 98% with a
 one-line summary in Korean added (see [AI Task summaries](#ai-task-summaries)).
 The tools sent per request went from about 167,000 characters to about 17,000.
 
+<!-- ha-marketplace:exclude-start -->
 ## Installation (HACS)
 
 1. HACS → ⋮ → **Custom repositories** → add
    `https://github.com/saya6k/ha-llm-tool-retrieval` as an **Integration**.
 2. Install **LLM Tool Retrieval** and restart Home Assistant.
-3. Settings → Devices & Services → **Add integration** → "LLM Tool Retrieval".
+<!-- ha-marketplace:exclude-end -->
 
 ## Configuration
+
+Add it from Settings → Devices & Services → **Add integration** → "LLM Tool Retrieval".
 
 | Setting | Default | |
 |---|---|---|
